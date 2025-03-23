@@ -1,0 +1,135 @@
+/* Global Styling */
+body {
+  background: radial-gradient(circle at center, #0f172a, #020617);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4);
+  max-width: 450px;
+  width: 90%;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.title {
+  font-size: 26px;
+  color: #00eaff;
+  text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+/* Upload Box */
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* File Input */
+.file-input {
+  padding: 12px;
+  border: 2px dashed rgba(0, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #00eaff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.file-input:hover {
+  background: rgba(0, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Upload Button */
+.upload-button {
+  background: linear-gradient(135deg, #00eaff, #00ff87);
+  color: #020617;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, #00ff87, #00eaff);
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 1);
+  transform: scale(1.05);
+}
+
+.upload-button:disabled {
+  background: rgba(0, 255, 255, 0.4);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Image Preview */
+.preview-box {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+}
+
+.preview-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Prediction Text */
+.prediction {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff87;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+  padding: 10px;
+  background: rgba(0, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Loading Animation */
+.loading {
+  color: #00eaff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
